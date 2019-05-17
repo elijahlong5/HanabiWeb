@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+.cardSpecs{
+    cursor: help;
+    height: auto;
+    max-width: 150px;
+    margin-left: -100px;
+    padding-top: 30px;
+}
+
+#South:hover, #ltNorth:hover, #ltEast:hover, #ltSouth:hover, #ltWest:hover,{
+        padding-top: 30px;
+        padding-bottom: 0px;
+}
+
+
+
+
+
+.cardSpecs:first-child{
+    margin-left: 0;
+}
+
+
+.cardSpecs:hover,.cardSpecs--picked, .playable, #East, #West{
+    padding-bottom: 30px;
+    padding-top: 0;
+}
+
+
+
+.noHoverMarginChange:hover {
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+
+
+#cols{
+    display:flex;
+}
+
+#cols > * {
+    flex: 1;
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column {
+    float: left;
+    padding: 10px;
+}
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 40%;
+}
+
+
+
+/*.cardSpecs:hover ~ img {
+		margin-top: 30px;
+}*/
+

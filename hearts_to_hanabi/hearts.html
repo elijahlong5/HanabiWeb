@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hearts</title>
+	
+	<script src="jquery-3.2.1.js"></script>
+	<script src="Card.js"></script>
+	<script src="Hearts.js"></script>
+	<script src="HeartsMatch.js"></script>
+	<script src="DumbAI.js"></script>
+	<script src="HumPlayer.js" type="text/javascript"></script>
+	<script src="main.js"></script>
+
+	<link href="a2.css" rel="stylesheet" >
+</head>
+
+<body>
+	<h1>Hearts Match With 3 A"I"s and a human</h1>
+
+<div class="row">
+  	<div class="column left" style="background-color:#aaa;">
+	    <h2>Your Hand</h2>
+		<div id="player_div">
+			<div id="north_player">
+				  <h3 id="north_player_header">north</h3>
+			</div>
+		</div>
+		<div id="hand">	
+
+		</div>
+  	</div>
+  	<div class="column right" style="background-color:#bbb;">
+   	 	<h2>Table</h2>
+   	 	<div>
+   	 		<h3>West----South----East</h3>
+   	 	</div>
+    	<div id="table">
+    		
+    	</div>	
+  	</div>
+</div>
+<div id="text">
+	
+</div>
+<div id="myText"></div>
+
+<div id="lastWinnerText">
+</div>
+<div id="cols">
+	<div id="northCol">
+	</div>
+	<div id="eastCol">
+	</div>
+	<div id="southCol">
+	</div>
+	<div id="westCol">
+	</div>
+
+</div>
+
+<div id="lastTrickText">
+</div>
+<div id="gameScoring"></div>
+
+<div id="lastTrick">
+	
+</div>
+
+		
+</body>
+</html>
