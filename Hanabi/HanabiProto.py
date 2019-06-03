@@ -1,3 +1,10 @@
+"""
+This is a rendition of the Hanabi firework game.
+The AdvOmniAIPlayer is able to win games ~70% of the time.
+
+Can toggle the game display with PRINT_GAME_STATUS
+
+"""
 from enum import Enum
 
 import colored
@@ -11,6 +18,7 @@ HINT_MAX = 8
 PRINT_GAME_STATUS = False
 
 PLAYER_COUNT = 4
+
 
 class Card:
 
@@ -750,6 +758,7 @@ class AdvOmniAIPlayer:
             decision['choice'] = 'discard'
             decision['card'] = kill_index
             return decision
+
 
 class SmarterOmniAIPlayer:
     """
